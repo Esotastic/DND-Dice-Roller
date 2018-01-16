@@ -1,0 +1,76 @@
+/*General Page Edits */
+
+body {
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  background-image: url("http://res.cloudinary.com/dhcon9xbu/image/upload/v1512247911/6809725-simple-vintage-backgrounds_exbdbm.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1{
+  
+}
+
+/*Results*/
+#results {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
+}
+
+#multidice {
+ display: block;
+ font-size: 25px;
+}
+
+/* Dice */
+
+.dice-bag{
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 50%;
+  align: center; 
+  background-color: none;
+}
+
+.dice{
+  margin: 10px;
+  display: inline-block;
+}
+
+#d10 {
+  width: 50%;
+}
+
+#d20 {
+  width: 50%;
+}
+
+#d12 {
+  width: 50%;
+}
+
+#d8{
+  width: 50%;
+}
+
+#d6{
+  width: 50%;
+}
+
+#d4{
+  width: 50%;
+}
+
+/* Hover and Transformation Effects */
+
+input:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  text-align:center;
+}

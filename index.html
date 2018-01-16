@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>DnD Dice Roller</title>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!--Font links and extras-->
+
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+<!--Page body-->
+<div class="page-main container-fluid">
+
+  <!--Header-->
+  <div class="page-head">
+    <h1>Dice Roller</h1>
+  </div>
+
+
+
+  <!--List of dice rollers-->
+  <div class="dice-bag row-fluid">
+    <div class="diceGroup1 col-md-4 col-xs-4">
+      <div class="dice d20">
+        <input id="d20" onclick="diceRoll.rolld20(); addDie.indication()" type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Twenty_sided_dice.svg/1000px-Twenty_sided_dice.svg.png" alt= "d20" />
+        <br>
+         <select id="d20multiply" onchange = "addDie.multiDie(this.id)">
+          <option value = "--">--</option>
+          <option value = "2">2</option>
+          <option value = "3">3</option>
+          <option value = "4">4</option>
+          <option value = "5">5</option>
+          <option value = "6">6</option>
+          <option value = "7">7</option>
+        </select>
+      </div>
+      <div class="dice d12">
+        <input id="d12" type="image" onclick="diceRoll.rolld12()" src="https://openclipart.org/image/2400px/svg_to_png/248550/D12.png" />
+        <br>
+         <select id="d12multiply" onchange = "addDie.multiDie(this.id)">
+          <option value = "Single">-</option>
+          <option value = "2">2</option>
+          <option value = "3">3</option>
+          <option value = "4">4</option>
+          <option value = "5">5</option>
+          <option value = "6">6</option>
+          <option value = "7">7</option>
+        </select>
+      </div>
+      <div class="dice d10">
+        <input class="resultsNum" id="d10" type="image" onclick="diceRoll.rolld10()" src="https://openclipart.org/image/2400px/svg_to_png/94495/ten-sided-dice.png" />
+        <br>
+         <select id="d10multiply" onchange = "addDie.multiDie(this.id)">
+            <option value = "Single">--</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+            <option value = "6">6</option>
+            <option value = "7">7</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Rolled dice results -->
+    <div class="col-md-4 col-xs-4" id="resultColumn">
+      <div class = "chosen-die" id ="selected-die">
+        <p>Test.</p>
+      </div>
+      <div id="results">
+        <p>Click the dice to roll!</p>
+      </div>
+      <div id="multidice">
+      </div>
+    </div>
+    <div class="diceGroup2 col-md-4 col-xs-4">
+      <div class="dice d8">
+        <input id="d8" type="image" onclick="diceRoll.rolld8()" src="https://openclipart.org/image/2400px/svg_to_png/248551/D8.png" />
+        <br>
+          <select id="d8multiply">
+            <option value = "Single" onchange = "addDie.multiDie(this.id)">--</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+            <option value = "6">6</option>
+            <option value = "7">7</option>
+        </select>
+      </div>
+      <div class="dice d6">
+        <input id="d6" type="image" onclick="diceRoll.rolld6()" src="https://openclipart.org/image/2400px/svg_to_png/94489/six-sided-dice.png" />
+        <br>
+          <select id="d6multiply" onchange = "addDie.multiDie(this.id)">
+            <option value = "Single">--</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+            <option value = "6">6</option>
+            <option value = "7">7</option>
+        </select>
+      </div>
+      <div class="dice d4">
+        <input id="d4" type="image" onclick="diceRoll.rolld4()" src="https://openclipart.org/image/2400px/svg_to_png/277761/1492037363.png" />
+        <br>
+          <select id="d4multiply" onchange = "addDie.multiDie(this.id)">
+            <option value = "Single">--</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+            <option value = "6">6</option>
+            <option value = "7">7</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

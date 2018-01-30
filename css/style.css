@@ -9,15 +9,12 @@ body {
   background-position: center;
 }
 
-h1{
-  
-}
 
 /*Results*/
 #results {
   display: block;
   text-align: center;
-  font-size: 3vw;
+  font-size: 400%;
 }
 
 #multidice {
@@ -26,13 +23,16 @@ h1{
 }
 
 /* Dice */
+.chosen-die{
+  font-size: 150%;
+}
 
 .dice-bag{
   padding: 10px;
   margin: auto;
   margin-bottom: 20px;
   width: 50%;
-  align: center; 
+  align: center;
   background-color: none;
 }
 
@@ -41,28 +41,8 @@ h1{
   display: inline-block;
 }
 
-#d10 {
-  width: 50%;
-}
-
-#d20 {
-  width: 50%;
-}
-
-#d12 {
-  width: 50%;
-}
-
-#d8{
-  width: 50%;
-}
-
-#d6{
-  width: 50%;
-}
-
-#d4{
-  width: 50%;
+.dice-size{
+  width:75%;
 }
 
 /* Hover and Transformation Effects */

@@ -6,13 +6,12 @@
   <title>DnD Dice Roller</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 </head>
 
 <body>
 
-  <!--Font links and extras-->
-
-  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 
   <!--Page body-->
   <div class="page-main container">
@@ -22,17 +21,15 @@
       <div class="diceGroup1 col-lg-4 col-md-4 col-xs-4">
         <div class="dice d20">
           <input id="d20" class ="dice-size" onclick="rollDice(20)" type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Twenty_sided_dice.svg/1000px-Twenty_sided_dice.svg.png" alt= "d20" />
-
         </div>
         <div class="dice d12">
           <input id="d12" class ="dice-size" type="image" onclick="rollDice(12)" src="https://openclipart.org/image/2400px/svg_to_png/248550/D12.png" />
-
         </div>
         <div class="dice d10">
-          <input class="dice-size" id="d10" type="image" onclick="rollDice(10)" src="https://openclipart.org/image/2400px/svg_to_png/94495/ten-sided-dice.png" />
-
+         <input class="dice-size" id="d10" type="image" onclick="rollDice(10)" src="https://openclipart.org/image/2400px/svg_to_png/94495/ten-sided-dice.png" />
         </div>
       </div>
+
       <!-- Rolled dice results -->
       <div class="col-lg-4 col-md-4 col-xs-4" id="resultColumn">
         <div class="chosen-die" id="selected-die">

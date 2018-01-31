@@ -54,3 +54,8 @@ input:hover {
 .footer {
   text-align:center;
 }
+
+.total-box{
+  border: 1px solid black;
+  padding: 20%;
+}

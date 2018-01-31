@@ -15,10 +15,10 @@
   <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 
   <!--Page body-->
-  <div class="page-main container-fluid">
+  <div class="page-main container">
 
     <!--List of dice rollers-->
-    <div class="dice-bag row-fluid">
+    <div class="dice-bag row">
       <div class="diceGroup1 col-lg-4 col-md-4 col-xs-4">
         <div class="dice d20">
           <input id="d20" class ="dice-size" onclick="rollDice(20)" type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Twenty_sided_dice.svg/1000px-Twenty_sided_dice.svg.png" alt= "d20" />
@@ -62,12 +62,15 @@
       </div>
       <!-- Rolled dice results -->
       <div class="col-lg-4 col-md-4 col-xs-4" id="resultColumn">
-        <div class = "chosen-die" id ="selected-die">
-        </div>
-        <div id="results">
-          Click the dice to roll!
+        <div class="chosen-die" id="selected-die">
+          Click the dice to roll.
         </div>
         <div id="multidice">
+        </div>
+        <p>Total:</p>
+        <div class="total-box">
+          <div id="results">
+          </div>
         </div>
       </div>
 
@@ -76,8 +79,8 @@
         <div class="dice d8">
           <input class ="dice-size" id="d8" type="image" onclick="rollDice(8)" src="https://openclipart.org/image/2400px/svg_to_png/248551/D8.png" />
           <br>
-            <select id="d8multiply">
-              <option value = "Single" onchange = "addDie.multiDie(this.id)">--</option>
+            <select id="d8multiply"  onchange = "addDie.multiDie(this.id)">
+              <option value = "Single">--</option>
               <option value = "2">2</option>
               <option value = "3">3</option>
               <option value = "4">4</option>
@@ -115,7 +118,7 @@
       </div>
     </div>
   </div>
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 
 </html>

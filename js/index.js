@@ -1,24 +1,20 @@
-//Injects multiple results rolls into a div under the main results.
-var addDie = {
-  multiDie: function(result) {
-    var extraDice = document.getElementById(result).value;
-    // document.getElementById("multidice").innerHTML = "";
-    // document.getElementById("multidice").innerHTML = extraDice;
-  },
-}
-
 //Random number gen
 function rollDice(sides) {
-  var moreDice = document.getElementById("dicemultiply").value;
+  document.getElementById("multidice").innerHTML = "";
+  var moreDice = Number(document.getElementById("dicemultiply").value);
   var rolled = document.getElementById("results");
-  var multiInner = document.getElementById("multidice").innerHTML;
   var rolledNumber = Math.floor(Math.random() * sides) + 1;
 
-  if (moreDice > 0){
-    document.getElementById("multidice").innerHTML = "<p>" + (rolledNumber * moreDice) + "</p>";
-  } else {
-    document.getElementById("multidice").innerHTML = "";
-    rolled.innerHTML =  "<p>" + rolledNumber + "</p>";
+  for (i = 0; i < moreDice; i++){
+    if (moreDice > 0) {
+      //Injects multiple results rolls into a div under the main results
+      var rolledNumberMulti = Math.floor(Math.random() * sides) + 1;
+      document.getElementById("multidice").innerHTML += "<p>" + rolledNumberMulti + "</p>";
+      rolled.innerHTML =  "<p>" + rolledNumber + "</p>"
+    } else {
+      document.getElementById("multidice").innerHTML = "";
+      rolled.innerHTML =  "<p>" + (Math.floor(Math.random() * sides) + 1) + "</p>";
+   }
  }
 
     //Tells which die the user has currently selected.

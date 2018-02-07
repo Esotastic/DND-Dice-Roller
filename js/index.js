@@ -3,16 +3,17 @@ function rollDice(sides) {
   document.getElementById("multidice").innerHTML = "";
   var moreDice = Number(document.getElementById("dicemultiply").value);
   var rolled = document.getElementById("results");
+  var multiDice = document.getElementById("multidice");
   var rolledNumber = Math.floor(Math.random() * sides) + 1;
 
   for (i = 0; i < moreDice; i++){
     if (moreDice > 0) {
       //Injects multiple results rolls into a div under the main results
       var rolledNumberMulti = Math.floor(Math.random() * sides) + 1;
-      document.getElementById("multidice").innerHTML += "<p>" + rolledNumberMulti + "</p>";
+      multiDice.innerHTML += "<p>" + rolledNumberMulti + "</p>";
       rolled.innerHTML =  "<p>" + rolledNumber + "</p>"
     } else {
-      document.getElementById("multidice").innerHTML = "";
+      multiDice.innerHTML = "";
       rolled.innerHTML =  "<p>" + (Math.floor(Math.random() * sides) + 1) + "</p>";
    }
  }

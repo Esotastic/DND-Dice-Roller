@@ -7,16 +7,16 @@ function rollDice(sides) {
   var rolledNumber = Math.floor(Math.random() * sides) + 1;
 
   for (i = 0; i < moreDice; i++){
-    if (moreDice > 0) {
-      //Injects multiple results rolls into a div under the main results
-      var rolledNumberMulti = Math.floor(Math.random() * sides) + 1;
-      multiDice.innerHTML += "<p>" + rolledNumberMulti + "</p>";
-      rolled.innerHTML =  "<p>" + rolledNumber + "</p>"
-    } else {
-      multiDice.innerHTML = "";
-      rolled.innerHTML =  "<p>" + (Math.floor(Math.random() * sides) + 1) + "</p>";
+   if (moreDice > 0) {
+    //Injects multiple results rolls into a div under the main results
+    var rolledNumberMulti = Math.floor(Math.random() * sides) + 1;
+    multiDice.innerHTML += "<p>" + rolledNumberMulti + "</p>";
+    rolled.innerHTML =  "<p>" + rolledNumber + "</p>";
+   } else {
+    multiDice.innerHTML = "";
+    rolled.innerHTML =  "<p>" + rolledNumber + "</p>";
    }
- }
+  }
 
     //Tells which die the user has currently selected.
     document.getElementById("selected-die").innerHTML = "";

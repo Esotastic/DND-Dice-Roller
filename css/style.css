@@ -9,12 +9,17 @@ body {
   background-position: center;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 1em;
+}
 
 /*Results*/
 #results {
   display: block;
   text-align: center;
-  font-size: 400%;
+  font-size: 150%;
 }
 
 #multidice {
@@ -42,7 +47,7 @@ body {
 }
 
 .dice-size{
-  width:75%;
+  width:50%;
 }
 
 /* Hover and Transformation Effects */
@@ -56,6 +61,8 @@ input:hover {
 }
 
 .total-box{
+  align: center; 
+  width: 50%;
   border: 1px solid black;
   padding: 20%;
   margin-bottom: 10px;

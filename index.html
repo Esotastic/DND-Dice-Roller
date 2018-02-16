@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>DnD Dice Roller</title>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <!-- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
   <link rel="stylesheet" href="css/style.css">
 
   <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
@@ -18,7 +18,7 @@
 
     <!--List of dice rollers-->
     <div class="dice-bag row">
-      <div class="diceGroup1 col-lg-4 col-md-4 col-xs-4">
+      <div class="diceGroup1">
         <div class="dice d20">
           <input id="d20" class ="dice-size" onclick="rollDice(20)" type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Twenty_sided_dice.svg/1000px-Twenty_sided_dice.svg.png" alt= "d20" />
         </div>
@@ -31,7 +31,7 @@
       </div>
 
       <!-- Rolled dice results -->
-      <div class="col-lg-4 col-md-4 col-xs-4" id="resultColumn">
+      <div class="" id="resultColumn">
         <div class="chosen-die" id="selected-die">
           Click the dice to roll.
         </div>
@@ -56,7 +56,7 @@
       </div>
 
       <!-- Second group of dice. -->
-      <div class="diceGroup2 col-lg-4 col-md-4 col-xs-4">
+      <div class="diceGroup2">
         <div class="dice d8">
           <input class ="dice-size" id="d8" type="image" onclick="rollDice(8)" src="https://openclipart.org/image/2400px/svg_to_png/248551/D8.png" />
           <br>

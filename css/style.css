@@ -48,7 +48,7 @@ body {
 }
 
 .dice-size{
-  width:50%;
+  width:40%;
 }
 
 /* Hover and Transformation Effects */
@@ -63,9 +63,7 @@ input:hover {
 
 .total-box{
   align: center;
-  /* width: 50%; */
   border-radius: 20px;
-  /* padding: 20%; */
   margin-bottom: 10px;
   background-color: #8FAAB3;
   box-shadow: 2px 2px 8px #888888;

@@ -3,7 +3,7 @@
 body {
   font-family: 'Cabin', sans-serif;
   text-align: center;
-  background-image: url("http://res.cloudinary.com/dhcon9xbu/image/upload/v1512247911/6809725-simple-vintage-backgrounds_exbdbm.jpg");
+  background-color: #C4BD8B;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -64,7 +64,10 @@ input:hover {
 .total-box{
   align: center;
   /* width: 50%; */
-  border: 1px solid black;
+  border-radius: 20px;
   /* padding: 20%; */
   margin-bottom: 10px;
+  background-color: #8FAAB3;
+  box-shadow: 2px 2px 8px #888888;
+
 }

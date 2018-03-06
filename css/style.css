@@ -3,11 +3,11 @@
 body {
   font-family: 'Cabin', sans-serif;
   text-align: center;
-  background-color: #C4BD8B;
+  background-image: url("http://res.cloudinary.com/dhcon9xbu/image/upload/v1520303094/pexels-photo-326311_ujfnzq.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
 }
 
 .wrapper {
